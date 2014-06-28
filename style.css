@@ -1,0 +1,173 @@
+@-webkit-keyframes backGround {
+    from { background-position: 699px 223px; }
+    to { background-position: 0 223px; }
+}
+
+@-webkit-keyframes zero-ready {
+    from { background-position: 0px 0px; }
+    to { background-position: -965px 0px; }
+    1% {
+        top: 10px;
+        height: 80px;
+    }
+    5% {
+        top: 50px;
+        height: 80px;
+    }
+    90% {
+        top: 130px;
+    }
+    99% {
+        top:130px;
+    }
+}
+
+@-webkit-keyframes zero-run {
+    from { background-position: -130px -490px; }
+    to { background-position: -1030px -490px; }
+}
+
+@-webkit-keyframes zero-stand {
+    from { background-position: -258px -113px; }
+    to { background-position: -360px -113px; }
+    1%, 50%, 99% {
+        width: 50px;
+        top: 150px;
+    }
+}
+
+@-webkit-keyframes zero-dash {
+    from { background-position: 0px -875px; }
+    to { background-position: -710px -875px; }
+}
+
+@-webkit-keyframes zero-bike {
+    from { background-position: -5px -355px; }
+    to { background-position: -570px -353px; }
+    1%, 99% {
+        width: 110px;
+    }
+}
+
+@-webkit-keyframes zero-jump {
+    from { background-position: 0px -177px; }
+    to { background-position: -1000px -177px; }
+    1%, 99% {
+        height: 90px;
+        top: 120px;
+        width: 65px;
+    }
+    25% {
+        top: 30px;
+    }
+    50% {
+        top: 80px;
+    }
+    75% {
+        top: 120px;
+    }
+}
+
+@-webkit-keyframes zero-attack1 {
+    from { background-position: 0px -578px; }
+    to { background-position: -1635px -578px; }
+    1%, 99% {
+        top: 139px;
+        width: 95px;
+        height: 65px;
+    }
+}
+@-webkit-keyframes zero-attack2 {
+    from { background-position: 5px -690px; }
+    to { background-position: -1056px -690px; }
+    1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 99% {
+        width: 85px;
+        height: 70px;
+    }
+}
+@-webkit-keyframes zero-attack3 {
+    from { background-position: 0px -760px; }
+    to { background-position: -1795px -760px; }
+    1%, 99% {
+        width: 110px;
+        height: 80px;
+        top: 125px;
+    }
+}
+@-webkit-keyframes zero-attack-ryuuenjin {
+    from { background-position: 0px -1360px; }
+    to { background-position: -1180px -1360px; }
+    1%, 99% {
+        height: 95px;
+        width: 68px;
+        top: 110px;
+    }
+    25% {
+        top: 30px;
+    }
+    50% {
+        top: 80px;
+    }
+    75% {
+        top: 110px;
+    }
+}
+@-webkit-keyframes zero-attack-hyouretsuzan {
+    from { background-position: 0px -1240px; }
+    to { background-position: -580px -1240px; }
+    1%, 99% {
+        height: 107px;
+        top: 105px;
+    }
+}
+@-webkit-keyframes zero-attack-eBlade {
+    from { background-position: 0px -1471px; }
+    to { background-position: -440px -1471px; }
+    1%, 99% {
+        height: 120px;
+        top: 80px;
+        width: 65px;
+    }
+    2% {
+        width: 60px;
+    }
+}
+
+@-webkit-keyframes zero-finish {
+    from { background-position: -8px -1141px; }
+    to { background-position: -710px -1141px; }
+    1%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 75%, 80% {
+        height: 80px;
+        top: 120px;
+    }
+    90%, 99% {
+        top: 0px;
+    }
+}
+
+#viewport {
+    background: url("images/bg.png");
+	width: 699px;
+	height: 223px;
+	border: 1px solid black;
+}
+
+#zero {
+	background: url("images/zero.png") -258px -113px;
+	width: 50px;
+	height: 60px;
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	-webkit-animation: zero-ready 2s steps(15, end) 1, zero-stand 1s 2s steps(2, end) infinite;
+}
+
+.move {
+    -webkit-animation: backGround 2s steps(50, end) infinite;
+}
+.pause {
+    -webkit-animation-play-state: paused;
+}
+.play {
+    -webkit-animation-play-state: running;
+}
